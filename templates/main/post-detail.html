@@ -1,0 +1,13 @@
+{%extends "main/base.html"%}
+{%block content%}
+<div class="container">
+    <div class="card" style="background-color: black;">
+        <div class="card-body">
+            <p style="color: white;">{{object.title}}</p>
+            <p style="color: white;">{{object.message}}</p>
+            <img class="img-fluid" src="{{object.image.url}}">
+            <p style="color: white;">{{object.post_date}}</p>
+        </div>
+    </div>
+</div>
+{%endblock%}
